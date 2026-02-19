@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areeb Fatima - Web Developer</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            margin-top: 15px;
+            color: #007bff;
+        }
+
+        .project-card p {
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media(max-width:600px){
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Areeb Fatima</h1>
+        <p>Junior Web Developer | HTML, CSS, JavaScript, WordPress</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Areeb, a passionate web developer. I love creating responsive and modern websites using HTML, CSS, JavaScript, and WordPress. I am looking forward to work on exciting projects and grow as a developer.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200.png?text=Project+1" alt="Project 1">
+                <h3>Restaurant Website</h3>
+                <p>Created a responsive restaurant website using HTML, CSS, and JavaScript. Added menu, gallery, and contact form.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200.png?text=Project+2" alt="Project 2">
+                <h3>Portfolio Website</h3>
+                <p>Designed a personal portfolio to showcase my skills and projects. Fully responsive and modern design.</p>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/400x200.png?text=Project+3" alt="Project 3">
+                <h3>WordPress Blog</h3>
+                <p>Built a WordPress blog website with custom theme, responsive layout, and contact form integration.</p>
+                <p><strong>Technologies:</strong> WordPress, PHP, CSS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:areeb@example.com">areeb@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/areeb" target="_blank">linkedin.com/in/areeb</a></p>
+        <p>WhatsApp: +92 300 1234567</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Areeb Fatima | <a href="#">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
