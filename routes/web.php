@@ -19,8 +19,8 @@ use App\Http\Controllers\Student\StudentDashboardController;
 // | Home
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('frontend.home');
+})->name('home');
 
 
 
@@ -140,9 +140,9 @@ Route::match(['get','post'], '/users/{id}/restore', [UserController::class, 'res
 
         });
 });
-Route::get('/', function () {
-    return view('app');
-});
+// Route::get('/', function () {
+//     return view('app');
+// });
 
 
 require __DIR__ . '/auth.php';
